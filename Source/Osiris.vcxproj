@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BuildConfig.h" />
+    <ClInclude Include="CS2\Classes\ClientModeCSNormal.h" />
+    <ClInclude Include="CS2\Classes\CLoopModeGame.h" />
+    <ClInclude Include="CS2\Classes\Color.h" />
+    <ClInclude Include="CS2\Classes\CPlantedC4.h" />
+    <ClInclude Include="CS2\Classes\CUtlFilenameSymbolTable.h" />
+    <ClInclude Include="CS2\Classes\CUtlVector.h" />
+    <ClInclude Include="CS2\Classes\CViewRender.h" />
+    <ClInclude Include="CS2\Classes\C_CSGameRules.h" />
+    <ClInclude Include="CS2\Classes\FileSystem.h" />
+    <ClInclude Include="CS2\Classes\GlobalVars.h" />
+    <ClInclude Include="CS2\Classes\IMemAlloc.h" />
+    <ClInclude Include="CS2\Classes\Panorama.h" />
+    <ClInclude Include="CS2\Classes\Sound.h" />
+    <ClInclude Include="CS2\Classes\Vector.h" />
+    <ClInclude Include="CS2\Classes\VMatrix.h" />
+    <ClInclude Include="CS2\Constants\AspectRatio.h" />
+    <ClInclude Include="CS2\Constants\BombSiteIndex.h" />
+    <ClInclude Include="CS2\Constants\DllNames.h" />
+    <ClInclude Include="CS2\Constants\EntityHandle.h" />
+    <ClInclude Include="CS2\Constants\PanelIDs.h" />
+    <ClInclude Include="CS2\Constants\SoundNames.h" />
+    <ClInclude Include="Endpoints.h" />
+    <ClInclude Include="FeatureHelpers\ClipSpaceCoordinates.h" />
+    <ClInclude Include="FeatureHelpers\FeatureHelpers.h" />
+    <ClInclude Include="FeatureHelpers\GlobalVarsProvider.h" />
+    <ClInclude Include="FeatureHelpers\HudInWorldPanelContainer.h" />
+    <ClInclude Include="FeatureHelpers\HudInWorldPanelFactory.h" />
+    <ClInclude Include="FeatureHelpers\HudInWorldPanels.h" />
+    <ClInclude Include="FeatureHelpers\HudInWorldPanelZOrder.h" />
+    <ClInclude Include="FeatureHelpers\Hud\BombTimerHelpers.h" />
+    <ClInclude Include="FeatureHelpers\Hud\DefusingAlertHelpers.h" />
+    <ClInclude Include="FeatureHelpers\Hud\KillfeedPreserverHelpers.h" />
+    <ClInclude Include="FeatureHelpers\NormalizedDeviceCoordinates.h" />
+    <ClInclude Include="FeatureHelpers\PanoramaTransformations.h" />
+    <ClInclude Include="FeatureHelpers\Sound\BombBeepSound.h" />
+    <ClInclude Include="FeatureHelpers\Sound\BombBeepVisualizerHelpers.h" />
+    <ClInclude Include="FeatureHelpers\Sound\BombDefuseSound.h" />
+    <ClInclude Include="FeatureHelpers\Sound\BombPlantSound.h" />
+    <ClInclude Include="FeatureHelpers\Sound\FootstepSound.h" />
+    <ClInclude Include="FeatureHelpers\Sound\PlayedSound.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundExpiryChecker.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundVisualization.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundVisualizationFeature.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundVisualizationHelpers.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundWatcher.h" />
+    <ClInclude Include="FeatureHelpers\Sound\SoundWatcherImpl.h" />
+    <ClInclude Include="FeatureHelpers\Sound\WatchedSounds.h" />
+    <ClInclude Include="FeatureHelpers\Sound\WeaponScopeSound.h" />
+    <ClInclude Include="FeatureHelpers\TogglableFeature.h" />
+    <ClInclude Include="FeatureHelpers\ViewToProjectionMatrix.h" />
+    <ClInclude Include="FeatureHelpers\WorldToClipSpaceConverter.h" />
+    <ClInclude Include="Features\Features.h" />
+    <ClInclude Include="Features\Hud\BombTimer.h" />
+    <ClInclude Include="Features\Hud\DefusingAlert.h" />
+    <ClInclude Include="Features\Hud\HudFeatures.h" />
+    <ClInclude Include="Features\Hud\KillfeedPreserver.h" />
+    <ClInclude Include="Features\Sound\BombBeepVisualizer.h" />
+    <ClInclude Include="Features\Sound\BombDefuseVisualizer.h" />
+    <ClInclude Include="Features\Sound\BombPlantVisualizer.h" />
+    <ClInclude Include="Features\Sound\FootstepVisualizer.h" />
+    <ClInclude Include="Features\Sound\SoundFeatures.h" />
+    <ClInclude Include="Features\Sound\WeaponScopeVisualizer.h" />
+    <ClInclude Include="Features\Visuals\ScopeOverlayRemover\HudScopePanels.h" />
+    <ClInclude Include="Features\Visuals\ScopeOverlayRemover\ScopeOverlayRemover.h" />
+    <ClInclude Include="Features\Visuals\VisualFeatures.h" />
+    <ClInclude Include="GameClasses\ClientMode.h" />
+    <ClInclude Include="GameClasses\FileNameSymbolTable.h" />
+    <ClInclude Include="GameClasses\FileSystem.h" />
+    <ClInclude Include="GameClasses\GameRules.h" />
+    <ClInclude Include="GameClasses\Implementation\ClientModeImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\FileNameSymbolTableImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\FileSystemImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\GameClassImplementationInstances.h" />
+    <ClInclude Include="GameClasses\Implementation\GameClassImplementations.h" />
+    <ClInclude Include="GameClasses\Implementation\GameRulesImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\MemAllocImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PanelImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PanoramaImagePanelImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PanoramaLabelImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PanoramaUiEngineImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PanoramaUiPanelImpl.h" />
+    <ClInclude Include="GameClasses\Implementation\PlantedC4Impl.h" />
+    <ClInclude Include="GameClasses\MemAlloc.h" />
+    <ClInclude Include="GameClasses\OffsetTypes\ClientModeOffset.h" />
+    <ClInclude Include="GameClasses\OffsetTypes\FileSystemOffset.h" />
+    <ClInclude Include="GameClasses\OffsetTypes\GameRulesOffset.h" />
+    <ClInclude Include="GameClasses\OffsetTypes\PanoramaUiPanelOffset.h" />
+    <ClInclude Include="GameClasses\OffsetTypes\PlantedC4Offset.h" />
+    <ClInclude Include="GameClasses\Panel.h" />
+    <ClInclude Include="GameClasses\PanelStyle.h" />
+    <ClInclude Include="GameClasses\PanoramaImagePanel.h" />
+    <ClInclude Include="GameClasses\PanoramaLabel.h" />
+    <ClInclude Include="GameClasses\PanoramaUiEngine.h" />
+    <ClInclude Include="GameClasses\PanoramaUiPanel.h" />
+    <ClInclude Include="GameClasses\PlantedC4.h" />
+    <ClInclude Include="GameDLLs\Tier0Dll.h" />
+    <ClInclude Include="GlobalContext.h" />
+    <ClInclude Include="Helpers\Bits.h" />
+    <ClInclude Include="Helpers\HudProvider.h" />
+    <ClInclude Include="Helpers\PanoramaPanelPointer.h" />
+    <ClInclude Include="Helpers\PanoramaTransformFactory.h" />
+    <ClInclude Include="Helpers\PatternNotFoundLogger.h" />
+    <ClInclude Include="Helpers\PlantedC4Provider.h" />
+    <ClInclude Include="Helpers\UnloadFlag.h" />
+    <ClInclude Include="Hooks\Hooks.h" />
+    <ClInclude Include="Hooks\LoopModeGameHook.h" />
+    <ClInclude Include="Hooks\PeepEventsHook.h" />
+    <ClInclude Include="Hooks\ViewRenderHook.h" />
+    <ClInclude Include="MemoryAllocation\FreeMemoryRegion.h" />
+    <ClInclude Include="MemoryAllocation\FreeMemoryRegionList.h" />
+    <ClInclude Include="MemoryAllocation\MemoryAllocator.h" />
+    <ClInclude Include="MemoryAllocation\MemoryAllocatorBase.h" />
+    <ClInclude Include="MemoryAllocation\MemoryDeleter.h" />
+    <ClInclude Include="MemoryAllocation\UniquePtr.h" />
+    <ClInclude Include="MemoryPatterns\ClientModePatterns.h" />
+    <ClInclude Include="MemoryPatterns\ClientPatterns.h" />
+    <ClInclude Include="MemoryPatterns\FileSystemPatterns.h" />
+    <ClInclude Include="MemoryPatterns\GameRulesPatterns.h" />
+    <ClInclude Include="MemoryPatterns\Linux\ClientModePatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\ClientPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\FileSystemPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\GameRulesPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\LinuxPatterns.h" />
+    <ClInclude Include="MemoryPatterns\Linux\MemAllocPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PanelPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PanoramaImagePanelPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PanoramaLabelPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PanoramaUiEnginePatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PanoramaUiPanelPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\PlantedC4PatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\Linux\SoundSystemPatternsLinux.h" />
+    <ClInclude Include="MemoryPatterns\MemAllocPatterns.h" />
+    <ClInclude Include="MemoryPatterns\PanelPatterns.h" />
+    <ClInclude Include="MemoryPatterns\PanoramaImagePanelPatterns.h" />
+    <ClInclude Include="MemoryPatterns\PanoramaLabelPatterns.h" />
+    <ClInclude Include="MemoryPatterns\PanoramaUiEnginePatterns.h" />
+    <ClInclude Include="MemoryPatterns\PanoramaUiPanelPatterns.h" />
+    <ClInclude Include="MemoryPatterns\PlantedC4Patterns.h" />
+    <ClInclude Include="MemoryPatterns\SoundSystemPatterns.h" />
+    <ClInclude Include="MemoryPatterns\Windows\ClientModePatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\ClientPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\FileSystemPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\GameRulesPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\MemAllocPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PanelPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PanoramaImagePanelPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PanoramaLabelPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PanoramaUiEnginePatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PanoramaUiPanelPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\PlantedC4PatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\SoundSystemPatternsWindows.h" />
+    <ClInclude Include="MemoryPatterns\Windows\WindowsPatterns.h" />
+    <ClInclude Include="MemorySearch\BinaryBytePattern.h" />
+    <ClInclude Include="MemorySearch\BytePattern.h" />
+    <ClInclude Include="MemorySearch\BytePatternConverter.h" />
+    <ClInclude Include="MemorySearch\BytePatternLiteral.h" />
+    <ClInclude Include="MemorySearch\BytePatternStorage.h" />
+    <ClInclude Include="MemorySearch\HybridPatternFinder.h" />
+    <ClInclude Include="MemorySearch\PatternFinder.h" />
+    <ClInclude Include="MemorySearch\PatternFinderScalar.h" />
+    <ClInclude Include="MemorySearch\PatternFinderSIMD.h" />
+    <ClInclude Include="MemorySearch\PatternStringWildcard.h" />
+    <ClInclude Include="Platform\DynamicLibrary.h" />
+    <ClInclude Include="Platform\Linux\LinuxDynamicLibrary.h" />
+    <ClInclude Include="Platform\Linux\LinuxMessageBox.h" />
+    <ClInclude Include="Platform\Linux\LinuxPlatformApi.h" />
+    <ClInclude Include="Platform\Linux\UserHomeFolderPath.h" />
+    <ClInclude Include="Platform\Macros\CallingConventions.h" />
+    <ClInclude Include="Platform\Macros\CallStack.h" />
+    <ClInclude Include="Platform\Macros\FunctionAttributes.h" />
+    <ClInclude Include="Platform\Macros\IsCompiler.h" />
+    <ClInclude Include="Platform\Macros\IsPlatform.h" />
+    <ClInclude Include="Platform\Macros\PlatformSpecific.h" />
+    <ClInclude Include="Platform\PlatformApi.h" />
+    <ClInclude Include="Platform\SimpleMessageBox.h" />
+    <ClInclude Include="Platform\TypeInfoPrecedingVmt.h" />
+    <ClInclude Include="Platform\Windows\CoTaskMemDeleter.h" />
+    <ClInclude Include="Platform\Windows\DLLs\CombaseDll.h" />
+    <ClInclude Include="Platform\Windows\DLLs\Shell32Dll.h" />
+    <ClInclude Include="Platform\Windows\PebLdr.h" />
+    <ClInclude Include="Platform\Windows\PortableExecutable.h" />
+    <ClInclude Include="Platform\Windows\UserDocumentsFolderPath.h" />
+    <ClInclude Include="Platform\Windows\Win.h" />
+    <ClInclude Include="Platform\Windows\WindowsDynamicLibrary.h" />
+    <ClInclude Include="Platform\Windows\WindowsMessageBox.h" />
+    <ClInclude Include="Platform\Windows\WindowsPlatformApi.h" />
+    <ClInclude Include="UI\Panorama\PanoramaCommandDispatcher.h" />
+    <ClInclude Include="UI\Panorama\PanoramaGUI.h" />
+    <ClInclude Include="UI\Panorama\SetCommandHandler.h" />
+    <ClInclude Include="Utils\Align.h" />
+    <ClInclude Include="Utils\BitFlags.h" />
+    <ClInclude Include="Utils\CharUtils.h" />
+    <ClInclude Include="Utils\DynamicArray.h" />
+    <ClInclude Include="Utils\FieldOffset.h" />
+    <ClInclude Include="Utils\FlagsBuilder.h" />
+    <ClInclude Include="Utils\GenericFunctionPointer.h" />
+    <ClInclude Include="Utils\HexChars.h" />
+    <ClInclude Include="Utils\LazyInitialized.h" />
+    <ClInclude Include="Utils\ManuallyDestructible.h" />
+    <ClInclude Include="Utils\MemorySection.h" />
+    <ClInclude Include="Utils\Pad.h" />
+    <ClInclude Include="Utils\RefCountedHook.h" />
+    <ClInclude Include="Utils\ReturnAddress.h" />
+    <ClInclude Include="Utils\SafeAddress.h" />
+    <ClInclude Include="Utils\SpanSlice.h" />
+    <ClInclude Include="Utils\StringBuilder.h" />
+    <ClInclude Include="Utils\StringParser.h" />
+    <ClInclude Include="Utils\TypeBitFlags.h" />
+    <ClInclude Include="Utils\TypeIndex.h" />
+    <ClInclude Include="Verification\Verifier.h" />
+    <ClInclude Include="Verification\VerifyMacros.h" />
+    <ClInclude Include="Vmt\VmtCopy.h" />
+    <ClInclude Include="Vmt\VmtLength.h" />
+    <ClInclude Include="Vmt\VmtLengthCalculator.h" />
+    <ClInclude Include="Vmt\VmtSwapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Panorama\CreateGUI.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Intrinsics.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dd077013-2b61-4122-970e-63e63055eaa8}</ProjectGuid>
+    <RootNamespace>Osiris</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;OSIRIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;OSIRIS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EntryPointSymbol>DllMain</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
